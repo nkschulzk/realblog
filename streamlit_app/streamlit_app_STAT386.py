@@ -12,7 +12,7 @@ st.title("Popular Baby Names App")
 
 # Sidebar for user input
 st.sidebar.title("Filters")
-gender = st.sidebar.radio("Select Gender", ("Both", "Male", "Female"))
+gender = st.sidebar.radio("Select Gender", ("Both", "M", "F"))
 year_range = st.sidebar.slider("Select Year Range", min_value=data['year'].min(), max_value=data['year'].max(), value=(data['year'].min(), data['year'].max()))
 
 # Filter data based on user input
